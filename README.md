@@ -24,11 +24,11 @@ This project provides a deep-dive analysis of airline operational performance, f
   
 ## Key Insights & Findings
 ### 1. Operational Overview
-- **Volume**: Out of 2 million total flights, the system successfully processed 1.936M non-cancelled and 1.934M non-delayed flights.
+- **Volume**: Out of **2 million** total flights, the system successfully processed **1.936M** non-cancelled and **1.934M** non-delayed flights.
 
-- **Disruptions**: There were 635 cancellations and 7,790 diversions.
+- **Disruptions**: There were **635** cancellations and **7,790** diversions.
 
-- **Holiday Impact**: A significant spike in cancellations and delays occurs in December, likely due to winter weather and peak holiday travel volume.
+- **Holiday Impact**: A significant spike in cancellations and delays occurs in **December**, likely due to winter weather and peak holiday travel volume.
 
 ### 2. Delay Root Cause Analysis
 Delays are categorized into five primary buckets. Carrier Delays are the leading cause of disruption:
@@ -44,16 +44,16 @@ Delays are categorized into five primary buckets. Carrier Delays are the leading
 - **Security Delay**: 156 incidents (Least frequent)
 
 ### 3. Geographical & Carrier Performance
-- **Most Affected Hubs**: Chicago O'Hare (ORD) and Hartsfield-Jackson (ATL) consistently show the highest volume of both delayed and diverted flights.
+- **Most Affected Hubs**: **Chicago O'Hare** (ORD) and **Hartsfield-Jackson** (ATL) consistently show the **highest** volume of both **delayed** and **diverted** flights.
 
-- **Regional Cancellations**: Illinois (32%) and Texas (28%) account for the majority of flight cancellations.
+- **Regional Cancellations**: **Illinois (32%)** and **Texas (28%)** account for the majority of flight cancellations.
 
-- **Carrier Reliability**: Southwest Airlines handles high volume but also experiences the highest number of diverted flights (~1.4K).
+- **Carrier Reliability**: **Southwest** Airlines handles **high volume** but also experiences the **highest** number of **diverted** flights **(~1.4K)**.
 
 ### 4. Taxi Times (Efficiency)
-- The average Taxi-In time across all carriers is 7 minutes.
+- The **average** Taxi-**In** time across all carriers is **7 minutes**.
 
-- The average Taxi-Out time is significantly higher at 18.24 minutes, indicating ground congestion is more prevalent during departures than arrivals.
+- The **average** Taxi-**Out** time is significantly higher at **18.24 minutes**, indicating ground congestion is more prevalent during departures than arrivals.
 
 ## DAX Measures & Logic
 The following measures were created in Power BI to drive the visualizations and provide dynamic insights:
@@ -79,10 +79,10 @@ The following measures were created in Power BI to drive the visualizations and 
 ## Recommendations
 Based on the data trends observed in the dashboard, the following strategic actions are recommended:
 
-- **Winter Readiness Program**: With a massive spike in cancellations and delays during December (481 cancellations vs. near-zero in summer), airlines should increase de-icing equipment and staffing levels at hubs like Chicago O'Hare (ORD) at least 30 days prior to the peak season.
+- **Winter Readiness Program**: With a massive spike in cancellations and delays during **December** (481 cancellations vs. near-zero in summer), airlines should increase de-icing equipment and staffing levels at hubs like Chicago O'Hare (ORD) at least 30 days prior to the peak season.
 
-- **Optimize Taxi-Out Efficiency**: Since the average Taxi-Out (18.24m) is more than double the Taxi-In (7m), ground operations should focus on departure sequencing. Reducing taxi-out time by even 2 minutes across 2M flights would result in massive fuel savings and improved passenger satisfaction.
+- **Optimize Taxi-Out Efficiency**: Since the average Taxi-Out **(18.24m)** is more than double the Taxi-In **(7m)**, ground operations should focus on departure sequencing. Reducing taxi-out time by even **2 minutes** across 2M flights would result in massive fuel savings and improved passenger satisfaction.
 
-- **Carrier-Specific Training**: American Airlines and SkyWest lead in cancellations. A deep-dive audit into their maintenance and crew scheduling protocols is recommended to identify why they are more prone to cancellations than competitors like United or Southwest.
+- **Carrier-Specific Training**: **American Airlines** and **SkyWest lead** in cancellations. A deep-dive audit into their maintenance and crew scheduling protocols is recommended to identify why they are more prone to cancellations than competitors like United or Southwest.
 
-- Regional Focus (IL & TX): Over 60% of cancellations are concentrated in Illinois and Texas. Developing "Regional Recovery Plans"—such as standby aircraft positioned specifically in these states—could help mitigate the ripple effect across the national network.
+- **Regional Focus (IL & TX)**: Over **60%** of cancellations are concentrated in **Illinois** and **Texas**. Developing "Regional Recovery Plans"—such as standby aircraft positioned specifically in these states—could help mitigate the ripple effect across the national network.
